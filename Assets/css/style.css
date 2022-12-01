@@ -1,0 +1,137 @@
+/* defined variables */
+:root {
+  --bkg: #78b3ef;
+  --box: hsl(234, 49%, 40%);
+  --txt: hwb(0 100% 0%);
+  --deco: hwb(284 20% 43%);
+}
+
+/* page background and default font */
+body {
+  font-family:'Courier New', Courier, monospace ;
+  background-color: var(--bkg);
+}
+
+/* includes the h1 element */
+header {
+  width: 100%;
+  text-align: center;
+  background-color: var(--box);
+  padding: 25px;
+  color: var(--txt);
+  font-size: 34px;
+}
+
+/* button style */
+button {
+  border: none;
+  background-color: var(--deco);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+  color: var(--txt);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 15px 5px auto;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+}
+
+main {
+  display: block;
+  color: var(--txt);
+}
+
+/* main section of the page */
+.game {
+  width: 60%;
+  height: 500px;
+  background-color: var(--box);
+  margin: 40px;
+  margin-right: 40px;
+  display: inline-flexbox;
+  text-align: center;
+}
+
+/* Generate a Password subtitle */
+h2 {
+  font-size: 28px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 50%;
+}
+
+/* Generate a Password subtitle */
+h3 {
+  font-size: 28px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.score-board {
+  width: 30%;
+  height: 200px;
+  background-color: var(--box);
+  padding: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-flexbox;
+  position: relative;
+  top: -500px;
+  left: 65%;
+}
+
+.timer {
+  width: 30%;
+  height: 200px;
+  background-color: var(--box);
+  padding: 40px;
+  display: inline-flexbox;
+  position: relative;
+  top: -500px;
+  left: 65%;
+}
+
+#countdown {
+  position: relative;
+  top: 15%;
+  left: 30%;
+}
+/* responsive layouts */
+@media (max-width: 690px) {
+  header {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 0.8rem;
+  }
+
+  #password {
+    font-size: 0.8rem;
+  }
+}
